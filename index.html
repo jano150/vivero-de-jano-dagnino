@@ -1,0 +1,225 @@
+<header>
+    <h1> El Invernadero del Colegio</h1>
+    <p>Un espacio para aprender, cultivar y cuidar nuestro ambiente</p>
+</header>
+
+<nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#invernadero">Nuestro invernadero</a>
+    <a href="#cultivos">Cultivos</a>
+    <a href="#beneficios">Beneficios</a>
+</nav>
+
+<main>
+
+    <section id="inicio" class="bienvenida">
+        <h2>Bienvenidos</h2>
+        <p>
+            Nuestro invernadero es un lugar donde los estudiantes
+            aprendemos sobre las plantas, la naturaleza y la importancia
+            de cuidar el medio ambiente.
+        </p>
+    </section>
+
+    <section id="invernadero">
+        <h2> Nuestro invernadero</h2>
+        <p>
+            En el invernadero del colegio cultivamos diferentes plantas
+            y verduras. Los estudiantes participan en el cuidado de los
+            cultivos, aprendiendo a sembrar, regar y cosechar.
+        </p>
+
+        <div class="tarjetas">
+            <div class="tarjeta">
+                <h3> Siembra</h3>
+                <p>Plantamos semillas y observamos cómo comienzan a crecer.</p>
+            </div>
+
+            <div class="tarjeta">
+                <h3> Cuidado</h3>
+                <p>Regamos las plantas y controlamos que tengan buenas condiciones.</p>
+            </div>
+
+            <div class="tarjeta">
+                <h3> Cosecha</h3>
+                <p>Recolectamos los frutos de nuestro trabajo.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="cultivos">
+        <h2> Nuestros cultivos</h2>
+
+        <ul>
+            <li>Lechuga</li>
+            <li>Tomate</li>
+            <li>Zanahoria</li>
+            <li>Albahaca</li>
+            <li>Frutilla</li>
+        </ul>
+    </section>
+
+    <section id="beneficios">
+        <h2> Beneficios del invernadero</h2>
+
+        <p>
+            El invernadero nos ayuda a conocer mejor la naturaleza y a
+            desarrollar hábitos responsables con el medio ambiente.
+        </p>
+
+        <ul>
+            <li>Aprendemos sobre las plantas.</li>
+            <li>Promovemos el cuidado del ambiente.</li>
+            <li>Trabajamos en equipo.</li>
+            <li>Aprendemos de dónde vienen nuestros alimentos.</li>
+            <li>Valoramos la importancia de la agricultura.</li>
+        </ul>
+    </section>
+
+</main>
+
+<footer>
+    <p> Proyecto escolar - El Invernadero del Colegio</p>
+</footer>
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef7e8;
+    color: #2d3a2d;
+    line-height: 1.6;
+}
+
+/* Encabezado */
+
+header {
+    background: linear-gradient(135deg, #2e7d32, #66bb6a);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+header h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+/* Menú */
+
+nav {
+    background-color: #1b5e20;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #c8e6c9;
+}
+
+/* Contenido */
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+section {
+    background-color: white;
+    margin-bottom: 25px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #2e7d32;
+    margin-bottom: 15px;
+}
+
+/* Sección de bienvenida */
+
+.bienvenida {
+    text-align: center;
+    border-left: 8px solid #4caf50;
+}
+
+/* Tarjetas */
+
+.tarjetas {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.tarjeta {
+    flex: 1;
+    background-color: #f1f8e9;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #c8e6c9;
+    transition: transform 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+}
+
+.tarjeta h3 {
+    color: #388e3c;
+    margin-bottom: 10px;
+}
+
+/* Lista */
+
+ul {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Pie de página */
+
+footer {
+    background-color: #1b5e20;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* Adaptación para celulares */
+
+@media (max-width: 700px) {
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    nav a {
+        display: block;
+        margin: 8px;
+    }
+
+    .tarjetas {
+        flex-direction: column;
+    }
+}
